@@ -90,7 +90,7 @@ button {
   padding-bottom: 2rem;
 }
 .text-product__description p{
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
 }
 
 .product-img {
@@ -175,7 +175,7 @@ button {
 .options-cards__container {
   background: #f5f6f7 url(https://i.postimg.cc/N0Z3qwHm/12.png) no-repeat 50% 50% / cover;
   gap: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
 }
 
 .options-cards__wrapper {
@@ -268,12 +268,25 @@ button {
   }
 }
 @media screen and (max-width: 790px) {
-  .product {
-    flex-direction: column;
+  .section {
+    padding-top: calc(var(--padding) / 2) !important;
   }
 
+  .container {
+    padding: 0 calc(var(--padding) / 2);
+  }
+  
+  .product {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
   .product * {
     width: auto;
+  }
+
+    .text-product__description {
+      padding-bottom: 0.5rem;
   }
 
   .text-product__btn-container {
